@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": { 
+     "env": { 
+       "ROOT_URL": "http://assignment1.meteorapp.com", 
+       "MONGO_URL": "mongodb://498p1Admin:socsadmin@ds143449.mlab.com:43449/498p1db" 
+     } 
+   }
+}

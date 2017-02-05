@@ -1,0 +1,41 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to MeteorEditor 1.0!</h1>
+    </header>
+
+    <!-- buttons for text style -->
+    <div>
+  		<button id="bold">Bold</button>
+  		<button id="italic">Italic</button>
+  		<button id="underline">Underline</button>
+  	</div>
+
+	<!-- buttons for text color -->
+  	<div>
+  		<button id="black">A</button>
+  		<button id="red">A</button>
+  		<button id="green">A</button>
+  		<button id="blue">A</button>
+  	</div>
+  	<br>
+
+  	<!-- form for inputting new text -->
+    <form class="new-word">
+      <input type="text" name="text" placeholder="Type to add more!" />
+    </form>
+
+    <!-- displaying each word as a span element -->
+    <ul class="blurb">
+      {{#each words}}
+        {{> word}}
+      {{/each}}
+    </ul>
+
+    <!-- button to clear all text -->
+    <div>
+  		<button id="clear">Clear All</button>
+  	</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
